@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <div id="controls">
+        <label for="boardColor">Board Color:</label>
+        <input type="color" id="boardColor" value="#ffffff">
+    
+        <label for="penColor">Pen Color:</label>
+        <input type="color" id="penColor" value="#000000">
+    
+        <label for="penSize">Pen Size:</label>
+        <button id="decreasePenSize">-</button>
+        <span id="penSizeDisplay">3</span>
+        <button id="increasePenSize">+</button>
+    
+        <label for="eraserSize">Eraser Size:</label>
+        <button id="decreaseEraserSize">-</button>
+        <span id="eraserSizeDisplay">10</span>
+        <button id="increaseEraserSize">+</button>
+    
+        <button id="eraser">Eraser</button>
+        <button id="previousPage">Previous Page</button>
+        <button id="nextPage">Next Page</button>
+    </div>
+    
+    <canvas id="whiteboard"></canvas>
+    
+    <!-- Whiteboard canvas -->
+    <canvas id="whiteboard"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
